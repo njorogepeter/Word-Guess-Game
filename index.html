@@ -5,11 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Word-Guess-Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assests/css/reset.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="assests/css/style.css"/>
-    <script src="game.js"></script>
 </head>
 <body>
+    <header>
+        <div class="header"></div>
+    </header>
     
+    <main class="container">
+        <table class="layout">
+            <thead>
+                <tr>
+                    <th colspan="2"><span class="Guess"></span>
+                        <h1 id ="pressKeyTryAgain"> Press Any Key to Try Again!</h1>
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="hint"></td>
+                    <td><h3 style="padding-bottom: 5px;"><u>Press any Key start!</u></h3>
+                        <h4>Wins:</h4> <div id="wins"></div>
+                        <h4>Current Word:</h4> <div id="currentWord"></div>
+                        <h4>Losses:</h4> <div id="losses"></div>
+                        <h4>All Guesses:</h4> <div id="Guesses"></div>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </main>
+    <footer class="footer">
+        <div class="container"></div>
+    </footer>
+    <script src="game.js"></script>
+   
+   <script>
+        startGame();
+        refreshScreen();
+    
+    </script>
 </body>
 </html>
